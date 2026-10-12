@@ -12,3 +12,5 @@ __pycache__/
 
 # Compiled Python files
 *.pyc
+test*
+.vscode
