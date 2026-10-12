@@ -10,7 +10,6 @@ def check_breaches(email, api_key):
         f"https://haveibeenpwned.com/api/v3/breachedAccount/{encoded_email}")
 
     headers = {
-
         "hibp-api-key": str(api_key),
         "User-Agent": "BreachWatch/1.0"
     }

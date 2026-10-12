@@ -6,6 +6,8 @@ from database.account_manager import (
     listing_monitored_account,
     set_monitoring_status
 )
+from breach_runner import check_active_accounts
+
 
 print("=======================")
 print("BreachWatch Started")
@@ -15,7 +17,8 @@ while (True):
     print("1. Add Monitored Account")
     print("2. List Monitored Account")
     print("3. Enable/Disable Monitoring")
-    print("4. Exit")
+    print("4. Check Breaches")
+    print("5. Exit")
 
     try:
         option = int(input("Choose an option: "))
@@ -35,7 +38,9 @@ while (True):
         
 
     elif option == 4:
-        break
+        check_active_accounts()
 
+    elif option == 5:
+        break
     else:
         print("Enter Valid Choice")

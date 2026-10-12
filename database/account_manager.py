@@ -85,7 +85,7 @@ def listing_monitored_account():
         print("No monitored accounts found.")
 
     else:
-        print("Monitored accounts:")
+        print("\nMonitored accounts:")
         for account in accounts:
             account_id, email, is_active, created_at = account
 
